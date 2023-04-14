@@ -1,0 +1,101 @@
+@media screen  and (max-width:420px)    {
+    body{
+        font-size: 10px;
+        
+    }
+    img{
+        display: none;
+    }
+}
+
+
+    
+    
+    
+
+
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+.banner {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 50px;
+
+}
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin: 0px;
+
+display: flex;
+align-content: center;
+
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.body {
+    background-color: bisque;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 100px;
+
+}
+
+footer {
+background-color: black;
+color: white;
+text-align: center;
+padding: 30px;
+font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.evenements {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 50px;
+    
+}
+
+.event {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+
+}
+.event2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="principal.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>BMW Lovers</h1>
+        <br>
+        <p>Association des propriétaires de BMW</p>
+        <br>
+
+
+        <nav>
+            <ul>
+                <li><a href="./index.html"> Accueil</a></li>
+                <li><a href="./events.html"> Évenements</a></li>
+                <li><a href="./contact.html"> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="body">
+        <div class="form">
+            <h2>Rejoignez-nous</h2>
+            <br>
+            <br>
+            <form>
+                <label for="nom">Nom </label><br>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom"><br><br>
+              
+                <label for="prenom">Prénom </label><br>
+                <input type="text" id="prenom" name="prenom" placeholder="votre prénom"><br><br>
+                <label class="form-label" for="email">E-mail</label>
+                <br>
+
+                <input class="form-control" type="email" name="email" id="email" placeholder="Votre adresse E-mail"
+                    minlength="1" maxlength="50" required>
+                     <!-- type email, pour qu'il y est inscrit un message "Saisissez un e-mail" si l'utilisateur ne l'a pas fait -->
+                <br>
+                <br>
+                <label class="form-label" for="message">Message</label>
+
+                <br>
+                <textarea class="textarea" name="message" id="Message" cols="30" rows="10" placeholder="Votre message"
+                    minlength="20" maxlength="500" required></textarea><br><br><br>
+                <!-- text area pour que le champ permette à l'utilisateur de saisir du texte sur plusieurs lignes -->
+              
+                <button type="submit" onclick="validerFormulaire()">Valider</button>
+              </form>
+              <script>
+                function validerFormulaire() {
+                  var nom = document.getElementById("nom").value;
+                  var prenom = document.getElementById("prenom").value;
+                
+                  if (nom.length < 2 || prenom.length < 2) {
+                    alert("Le nom et le prénom doivent contenir au moins 2 caractères.");
+                    event.preventDefault(); // Empêche l'envoi du formulaire
+                  }
+                }
+                </script>
+               
+
+         </div>
+       
+       <footer>
+       <p> Copyright Younes Nadji 2023 © Tous droits réservés</p> 
+       </footer>
+       
+    </body>
+  
+    
+    
+    
+    </html>
+
+
